@@ -14,6 +14,71 @@ body {
   font-family: Georgia, serif;
 }
 
+.imageText {
+  color: #8E8D50;
+
+  font-size: 11px;
+
+  max-width: 210px;
+
+  width: 100%;
+}
+
+.rockerWrapper {
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.rocker img {
+  max-width: 210px;
+  width: 100%;
+  height: auto;
+
+  display: flex;
+
+  background-color: #FFFFFF;
+
+  padding: 2px;
+
+  border: 2px solid #685742;
+
+  margin-bottom: .5rem;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.rocker .living {
+  max-width: 350px;
+  width: 100%;
+}
+
+.rocker {
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+}
+
+#personalized {
+  max-width: 100px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+#personalizedText {
+  font-style: italic;
+  margin-bottom: 2rem
+}
+
 .wrapper {
   width: 100%;
 
@@ -171,6 +236,11 @@ header .right {
   margin-right: 1rem;
 
   max-width: 804px;
+  width: 100%;
+}
+
+.singleWordFix {
+  height: 25px;
 }
 
 .background {
@@ -613,7 +683,7 @@ img.first-image {
   z-index: 2;
 }
 
-.navCaskets {
+.rockers {
   display: flex;
 
   justify-content: space-evenly;
@@ -673,14 +743,19 @@ img.first-image {
     justify-content: center;
   }
 
-  .nav {
+  /* .nav {
     padding-bottom: 1.9rem;
-  }
+  } */
 
   .nav-content {
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: column; */
+
+    margin-left: auto;
+    margin-right: auto;
+
+    text-align: center;
   }
 
   .nav-content .link {
@@ -688,7 +763,7 @@ img.first-image {
 
     text-align: center;
 
-    padding: .5rem;
+    padding: .5rem;.
   }
 
   .nav-content .link a {
@@ -699,7 +774,7 @@ img.first-image {
     /* padding-left: 0;
     padding-right: 0; */
 
-    margin-top: -1.5rem;
+    /* margin-top: -1.5rem; */
   }
 
   header .left img {
@@ -726,7 +801,7 @@ img.first-image {
   }
 
   .small-logo {
-    display: none;
+    /* display: none; */
   }
 
   .casket a .nav-text {
@@ -760,6 +835,24 @@ img.first-image {
      padding-left: 0;
      padding-right: 0;
    }
+}
+
+@media (max-width:500px) {
+  .nav-content {
+    display: flex;
+
+    justify-content: center;
+
+    flex-direction: column;
+  }
+
+  .small-logo {
+    display: none;
+  }
+
+  .nav {
+    height: 245px;
+  }
 }
 
 
